@@ -1,7 +1,118 @@
-.text-image-index {
-  left: 2%;
+html {
+  position: relative;
+}
+
+body {
+  padding-bottom: 200px;
+  min-height: 100vh;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
   right: 0;
+  left: 0;
+  height: 150px;
+  padding: 0 20px 20px 0;
+}
+
+section {
+  padding-top: 10px;
+}
+
+header .bg-light {
+  background-color: rgb(211, 209, 209) !important;
+  padding: 20px 30px 20px 30px;
+}
+header nav {
+  background-color: rgb(67, 66, 66);
+}
+header nav .container-fluid {
+  padding-left: 0;
+  padding: 30px 30px 30px 30px;
+}
+
+section {
+  padding-top: 0px;
+}
+section div div .text-image-index {
   text-align: left;
+}
+
+section .card {
+  background-color: transparent;
+  border: none;
+}
+
+section .border-top-bottom-right {
+  border-top: 1px solid rgb(48, 48, 48);
+  border-bottom: 1px solid rgb(48, 48, 48);
+}
+section .border-top-bottom-right div .border-right {
+  border-right: 1px solid rgb(48, 48, 48);
+}
+section .border-top-bottom-right div .card-body {
+  padding: 50px;
+}
+section .border-top-bottom-right div .card-body div {
+  width: 30px;
+}
+section .max-width-section-lista {
+  max-width: 650px;
+}
+section .max-width-section-lista div ul .list-style {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+section .padding-sesion-gratuita {
+  padding: 100px;
+}
+
+section .container-form {
+  justify-content: center;
+  flex-direction: row;
+}
+section .container-form .redes-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border-right: 1px solid rgb(48, 48, 48);
+  padding-right: 50px;
+  text-align: right;
+}
+section .container-form .formulario {
+  margin-left: 50px;
+  width: 100%;
+}
+section .container-form .formulario div .form-control {
+  border: none;
+  border-bottom: 1px solid rgb(48, 48, 48);
+  border-radius: 0;
+  max-width: 600px;
+  min-width: 200px;
+}
+
+@media (max-width: 991.98px) {
+  section .container-form {
+    flex-direction: column;
+  }
+  section .container-form .redes-form {
+    flex-direction: row;
+    justify-content: center;
+    border-right: 0;
+    border-bottom: 1px solid rgb(48, 48, 48);
+    width: 100%;
+    padding-right: 0;
+  }
+  section .container-form .redes-form p {
+    margin-left: 5px;
+  }
+  section .container-form .formulario {
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

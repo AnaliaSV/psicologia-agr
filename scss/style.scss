@@ -1,10 +1,176 @@
+//variales
+$light-grey: rgb(211, 209, 209);
+$black-grey: rgb(67, 66, 66);
+$padding-section:10px;
+$border-top: 1px solid rgb(48, 48, 48);
+$border-bottom: 1px solid rgb(48, 48, 48);
+$border-right:1px solid rgb(48, 48, 48);
+
+html {
+    position: relative;
+}
+body{    
+    padding-bottom: 200px;
+    min-height: 100vh;
+}
+footer {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 150px;
+    padding: 0 20px 20px 0;
+}
+
+section {
+    padding-top: $padding-section;
+}
 // NAVBAR
-
-// INDEX 
-    // texto imagen
-
-    .text-image-index {
-        left: 2%;
-        right: 0;
-        text-align: left;
+header {
+    .bg-light {
+        background-color: $light-grey !important;
+        padding:20px 30px 20px 30px;
     }
+    nav {
+        background-color: $black-grey;
+        .container-fluid {
+            padding-left:0;
+            padding:30px 30px 30px 30px;
+        }
+    }    
+}
+// INDEX 
+    // imagen presentacion
+    section {
+        padding-top: 0px;
+        div {
+            div {
+                .text-image-index {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+
+    //sobre mi
+    section {
+        .card{
+            background-color:transparent;
+            border:none;
+        }
+    }   
+
+    //Servicios
+    
+     section{     
+        .border-top-bottom-right {
+            border-top:$border-top;
+            border-bottom:$border-bottom;
+            div {
+                .border-right {
+                    border-right:$border-right;
+                    
+                }
+                .card-body {
+                    padding: 50px;
+                    div {
+                        width:30px;                        
+                    }
+                }
+            }
+        }    
+         //Algunas problemáticas
+        .max-width-section-lista{
+        max-width: 650px;
+        div {
+           ul {
+            .list-style{
+                margin-top:3px ;
+                margin-bottom:3px;
+            }
+           } 
+        }
+       }
+    }
+
+       //Primera sesión gratuita
+    section {   
+        .padding-sesion-gratuita {
+            padding: 100px;
+        }
+    }
+
+    //Formulario 
+    section {
+        .container-form {
+            justify-content: center;
+            flex-direction: row;
+            .redes-form {
+                display: flex;
+                flex-direction: column;
+                justify-content:  center;
+                align-items: center;
+                width: 200px;
+                border-right: $border-right;
+                padding-right: 50px;
+                text-align: right;
+
+            }
+            .formulario{
+                margin-left:50px;
+                width: 100%;
+                div {
+                    .form-control {
+                        border: none;
+                        border-bottom:$border-bottom;
+                        border-radius: 0;
+                        max-width: 600px;
+                        min-width: 200px;
+                    }
+                }
+            }
+        }        
+    }
+
+    // tablets, less than 992px
+    @media (max-width: 991.98px) { 
+        section {
+            .container-form {
+                flex-direction: column;
+                .redes-form {
+                    flex-direction: row;
+                    justify-content:center;
+                    border-right:0;
+                    border-bottom: $border-bottom;
+                    width: 100%;
+                    padding-right: 0;
+                    p {
+                        margin-left: 5px;
+                    }
+                }
+                .formulario{
+                    margin-left:0;
+                }
+            }        
+       }
+    }   
+    //  // Medium devices (tablets, 768px and up)
+    // @media (max-width: 768px) { 
+    //     .container-form {
+    //            .formulario{
+                
+    //             margin-left:50px;
+    //             div {
+    //                 .form-control{
+    //                     width: 350px;
+    //                 }
+    //             }
+
+    //            }
+    //         }       
+    //  }
+
+
+
+    
