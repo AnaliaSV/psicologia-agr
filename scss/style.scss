@@ -105,7 +105,7 @@ header {
     section {
         .container-form {
             justify-content: center;
-            flex-direction: row;
+            max-width: 1320px;
             .redes-form {
                 display: flex;
                 flex-direction: column;
@@ -119,14 +119,11 @@ header {
             }
             .formulario{
                 margin-left:50px;
-                width: 100%;
                 div {
                     .form-control {
                         border: none;
                         border-bottom:$border-bottom;
                         border-radius: 0;
-                        max-width: 600px;
-                        min-width: 200px;
                     }
                 }
             }

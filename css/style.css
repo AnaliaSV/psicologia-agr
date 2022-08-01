@@ -71,7 +71,7 @@ section .padding-sesion-gratuita {
 
 section .container-form {
   justify-content: center;
-  flex-direction: row;
+  max-width: 1320px;
 }
 section .container-form .redes-form {
   display: flex;
@@ -85,14 +85,11 @@ section .container-form .redes-form {
 }
 section .container-form .formulario {
   margin-left: 50px;
-  width: 100%;
 }
 section .container-form .formulario div .form-control {
   border: none;
   border-bottom: 1px solid rgb(48, 48, 48);
   border-radius: 0;
-  max-width: 600px;
-  min-width: 200px;
 }
 
 @media (max-width: 991.98px) {
