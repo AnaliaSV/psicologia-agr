@@ -105,7 +105,8 @@ header {
     section {
         .container-form {
             justify-content: center;
-            max-width: 1320px;
+            max-width: 1000px;
+            margin: auto;
             .redes-form {
                 display: flex;
                 flex-direction: column;

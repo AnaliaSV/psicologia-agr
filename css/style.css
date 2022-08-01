@@ -71,7 +71,8 @@ section .padding-sesion-gratuita {
 
 section .container-form {
   justify-content: center;
-  max-width: 1320px;
+  max-width: 1000px;
+  margin: auto;
 }
 section .container-form .redes-form {
   display: flex;
