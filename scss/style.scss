@@ -93,7 +93,22 @@ header {
         }
        }
     }
-
+    // tablets, less than 992px
+    @media (max-width: 991.98px) { 
+        section {
+            .border-top-bottom-right {
+                div {
+                    .border-right {
+                        border-bottom:$border-bottom;
+                        
+                    }
+                }
+            }
+            .card-group.responsive-card {
+                flex-direction: column;
+            }    
+        }    
+    }   
        //Primera sesión gratuita
     section {   
         .padding-sesion-gratuita {
