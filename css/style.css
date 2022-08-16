@@ -38,6 +38,15 @@ section {
 section div div .text-image-index {
   text-align: left;
 }
+section div div .text-image-index h1 {
+  font-size: 2rem;
+}
+section div div .text-image-index p.phrase {
+  font-size: 3.75rem;
+}
+section div div .text-image-index .text-item {
+  font-size: 1rem;
+}
 
 section .card {
   background-color: transparent;
@@ -58,13 +67,28 @@ section .border-top-bottom-right div .card-body div {
   width: 30px;
 }
 section .max-width-section-lista {
-  max-width: 650px;
+  max-width: 850px;
 }
 section .max-width-section-lista div ul .list-style {
   margin-top: 3px;
   margin-bottom: 3px;
 }
 
+@media (max-width: 991.98px) {
+  section .border-top-bottom-right div .border-right {
+    border-bottom: 1px solid rgb(48, 48, 48);
+    border-right: none;
+  }
+  section .card-group.responsive-card {
+    flex-direction: column;
+  }
+  section .lista-responsive {
+    flex-direction: column;
+  }
+  section .max-width-section-lista {
+    max-width: 350px;
+  }
+}
 section .padding-sesion-gratuita {
   padding: 100px;
 }

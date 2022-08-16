@@ -47,6 +47,15 @@ header {
             div {
                 .text-image-index {
                     text-align: left;
+                    h1{
+                        font-size: 2rem;
+                    }
+                    p.phrase{
+                        font-size: 3.75rem;
+                    }
+                    .text-item{
+                        font-size: 1rem;
+                    }
                 }
             }
         }
@@ -82,7 +91,7 @@ header {
         }    
          //Algunas problemáticas
         .max-width-section-lista{
-        max-width: 650px;
+        max-width: 850px;
         div {
            ul {
             .list-style{
@@ -92,6 +101,7 @@ header {
            } 
         }
        }
+
     }
     // tablets, less than 992px
     @media (max-width: 991.98px) { 
@@ -100,13 +110,21 @@ header {
                 div {
                     .border-right {
                         border-bottom:$border-bottom;
+                        border-right: none;
                         
                     }
                 }
             }
             .card-group.responsive-card {
                 flex-direction: column;
-            }    
+            }
+            .lista-responsive{
+                flex-direction: column;
+            }
+            .max-width-section-lista{
+                max-width: 350px;
+            }
+
         }    
     }   
        //Primera sesión gratuita
