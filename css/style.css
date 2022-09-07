@@ -5,6 +5,22 @@ html {
 body {
   padding-bottom: 200px;
   min-height: 100vh;
+  background-color: #F8F7F7;
+  color: #2f2c2f;
+}
+
+button {
+  color: white !important;
+  background-color: #38C5CE !important;
+  border: 1px solid white !important;
+}
+button:hover {
+  color: #38C5CE !important;
+  border: 1px solid #38C5CE !important;
+  background-color: white !important;
+}
+button:focus {
+  box-shadow: none !important;
 }
 
 footer {
@@ -14,6 +30,8 @@ footer {
   left: 0;
   height: 150px;
   padding: 0 20px 20px 0;
+  color: white;
+  background-color: #413A41;
 }
 
 section {
@@ -21,15 +39,25 @@ section {
 }
 
 header .bg-light {
-  background-color: rgb(211, 209, 209) !important;
   padding: 20px 30px 20px 30px;
 }
 header nav {
-  background-color: rgb(67, 66, 66);
+  color: white;
+  background-color: #413A41;
 }
 header nav .container-fluid {
   padding-left: 0;
   padding: 30px 30px 30px 30px;
+}
+header nav .container-fluid a {
+  color: white !important;
+}
+header nav .container-fluid a:active {
+  color: white !important;
+}
+header nav .container-fluid a:hover {
+  color: #38C5CE !important;
+  background-color: darken !important;
 }
 
 section {
@@ -48,14 +76,18 @@ section div div .text-image-index .text-item {
   font-size: 1rem;
 }
 
-section .card {
-  background-color: transparent;
+.bg-sobre-mi .card {
   border: none;
+  background-color: #F8F7F7 !important;
 }
 
 section .border-top-bottom-right {
   border-top: 1px solid rgb(48, 48, 48);
   border-bottom: 1px solid rgb(48, 48, 48);
+}
+section .border-top-bottom-right div {
+  border: none;
+  background-color: transparent;
 }
 section .border-top-bottom-right div .border-right {
   border-right: 1px solid rgb(48, 48, 48);

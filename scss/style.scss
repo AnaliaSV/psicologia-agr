@@ -1,17 +1,42 @@
 //variales
-$light-grey: rgb(211, 209, 209);
-$black-grey: rgb(67, 66, 66);
 $padding-section:10px;
 $border-top: 1px solid rgb(48, 48, 48);
 $border-bottom: 1px solid rgb(48, 48, 48);
 $border-right:1px solid rgb(48, 48, 48);
 
+//colors
+$primary-light: #CCB9BC;
+$primary-dark: #413A41;
+$color-font: #2f2c2f;
+$ternary: #898989;
+$light: #f2f2ff;
+$primary-bg: #F8F7F7;
+$turquoise:#38C5CE;
+
 html {
     position: relative;
 }
+
 body{    
     padding-bottom: 200px;
     min-height: 100vh;
+    background-color:$primary-bg;
+    color:$color-font ;
+}
+
+button{
+    color: white !important;
+    background-color: $turquoise !important;
+    border: 1px solid white !important;
+    &:hover{
+        color: $turquoise !important;
+        border:1px solid $turquoise!important;
+        background-color: white !important;
+    }
+
+    &:focus{
+        box-shadow: none!important;
+    }
 }
 footer {
     width: 100%;
@@ -20,6 +45,8 @@ footer {
     left: 0;
     height: 150px;
     padding: 0 20px 20px 0;
+    color: white;
+    background-color: $primary-dark;
 }
 
 section {
@@ -28,14 +55,24 @@ section {
 // NAVBAR
 header {
     .bg-light {
-        background-color: $light-grey !important;
         padding:20px 30px 20px 30px;
     }
     nav {
-        background-color: $black-grey;
+        color: white;
+        background-color: $primary-dark;   
         .container-fluid {
             padding-left:0;
             padding:30px 30px 30px 30px;
+            a {
+            color: white !important;
+                &:active{
+                color: white !important;
+               }
+               &:hover{
+                color:$turquoise !important;
+                background-color: darken !important;
+               }
+            }
         }
     }    
 }
@@ -63,10 +100,11 @@ header {
 
 
     //sobre mi
-    section {
+    .bg-sobre-mi {
         .card{
-            background-color:transparent;
             border:none;
+            background-color: $primary-bg !important;
+
         }
     }   
 
@@ -77,6 +115,8 @@ header {
             border-top:$border-top;
             border-bottom:$border-bottom;
             div {
+                border: none;
+                background-color:transparent;
                 .border-right {
                     border-right:$border-right;
                     
