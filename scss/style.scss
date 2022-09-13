@@ -52,11 +52,43 @@ footer {
 section {
     padding-top: $padding-section;
 }
-// NAVBAR
+//REDES
+
+
+
 header {
-    .bg-light {
-        padding:20px 30px 20px 30px;
+    div.bg-light {  
+        padding:5px 30px 0px 30px;
+        div{
+            div{
+                ul {
+                    padding:0;
+                   li {
+                    list-style: none;
+                    padding: 10px 10px 0 0px;   
+                   }     
+                }
+            }
+        }
+        div{
+            .nav-redes { 
+                        li{
+                            list-style: none;
+                            padding: 10px;
+                        }
+            }
+        }
     }
+    //tablets, less than 768px  
+    @media (max-width: 767.98px) { 
+                div.bg-light {
+            display: none !important;
+        }
+    }
+     
+
+// NAVBAR
+
     nav {
         color: white;
         background-color: $primary-dark;   
@@ -74,7 +106,39 @@ header {
                }
             }
         }
-    }    
+    }   
+        // Large devices (desktops, 768px and up)
+        @media (min-width: 768px) { 
+            nav{
+                div{
+                    div{
+                        div.display-none-desktop-tablet {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        } 
+        @media (max-width: 768px) { 
+            nav{
+                div{
+                    div{
+                        div.display-none-desktop-tablet {
+                            ul.nav-redes {
+                                padding: 0;
+                                li {
+                                    list-style: none;
+                                    padding:20px 20px 0px 0px;
+                                    i{
+                                        font-size: 25px;
+                                    }
+                                }    
+                            }
+                        }
+                    }
+                }
+            }
+        } 
 }
 // INDEX 
     // imagen presentacion
@@ -91,12 +155,90 @@ header {
                         font-size: 3.75rem;
                     }
                     .text-item{
-                        font-size: 1rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }     
+        // `lg` applies to medium devices (tablets, less than 992px)
+        @media (max-width: 991.98px) { 
+            div {
+                div {
+                    .text-image-index {
+                        text-align: left;
+                        h1{
+                            font-size: 1.5rem;
+                        }
+                        p.phrase{
+                            font-size: 2.75rem;
+                        }
+                        .text-item{
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
         }
+         // `md` applies to small devices (landscape phones, less than 768px)
+        @media (max-width: 767.98px) { 
+            div {
+                div {
+                    .text-image-index {
+                        text-align: left;
+                        h1{
+                            font-size: 1.2rem;
+                        }
+                        p.phrase{
+                            font-size: 2rem;
+                        }
+                        .text-item{
+                            display: none;
+                        }
+                    }
+                }
+            }
+         }
+
+        // `sm` applies to x-small devices (portrait phones, less than 576px)
+        @media (max-width: 575.98px) { 
+            div {
+                div {
+                    .text-image-index {
+                        text-align: left;
+                        h1{
+                            font-size: 2rem;
+                        }
+                        p.phrase{
+                           display: none;
+                        }
+                        .text-item{
+                            display: none;
+                        }
+                    }
+                }
+            }
+         }
+         // `sm` applies to x-small devices (portrait phones, less than 350px)
+         @media (max-width: 350px) { 
+            div {
+                div {
+                    .text-image-index {
+                        text-align: left;
+                        h1{
+                            font-size: 1.5rem;
+                        }
+                        p.phrase{
+                            display: none;
+                        }
+                        .text-item{
+                            display: none;
+                        }
+                    }
+                }
+            }
+         }
     }
+    
 
 
     //sobre mi

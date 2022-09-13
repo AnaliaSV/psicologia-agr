@@ -38,8 +38,24 @@ section {
   padding-top: 10px;
 }
 
-header .bg-light {
-  padding: 20px 30px 20px 30px;
+header div.bg-light {
+  padding: 5px 30px 0px 30px;
+}
+header div.bg-light div div ul {
+  padding: 0;
+}
+header div.bg-light div div ul li {
+  list-style: none;
+  padding: 10px 10px 0 0px;
+}
+header div.bg-light div .nav-redes li {
+  list-style: none;
+  padding: 10px;
+}
+@media (max-width: 767.98px) {
+  header div.bg-light {
+    display: none !important;
+  }
 }
 header nav {
   color: white;
@@ -59,6 +75,23 @@ header nav .container-fluid a:hover {
   color: #38C5CE !important;
   background-color: darken !important;
 }
+@media (min-width: 768px) {
+  header nav div div div.display-none-desktop-tablet {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header nav div div div.display-none-desktop-tablet ul.nav-redes {
+    padding: 0;
+  }
+  header nav div div div.display-none-desktop-tablet ul.nav-redes li {
+    list-style: none;
+    padding: 20px 20px 0px 0px;
+  }
+  header nav div div div.display-none-desktop-tablet ul.nav-redes li i {
+    font-size: 25px;
+  }
+}
 
 section {
   padding-top: 0px;
@@ -73,7 +106,63 @@ section div div .text-image-index p.phrase {
   font-size: 3.75rem;
 }
 section div div .text-image-index .text-item {
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+@media (max-width: 991.98px) {
+  section div div .text-image-index {
+    text-align: left;
+  }
+  section div div .text-image-index h1 {
+    font-size: 1.5rem;
+  }
+  section div div .text-image-index p.phrase {
+    font-size: 2.75rem;
+  }
+  section div div .text-image-index .text-item {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  section div div .text-image-index {
+    text-align: left;
+  }
+  section div div .text-image-index h1 {
+    font-size: 1.2rem;
+  }
+  section div div .text-image-index p.phrase {
+    font-size: 2rem;
+  }
+  section div div .text-image-index .text-item {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  section div div .text-image-index {
+    text-align: left;
+  }
+  section div div .text-image-index h1 {
+    font-size: 2rem;
+  }
+  section div div .text-image-index p.phrase {
+    display: none;
+  }
+  section div div .text-image-index .text-item {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  section div div .text-image-index {
+    text-align: left;
+  }
+  section div div .text-image-index h1 {
+    font-size: 1.5rem;
+  }
+  section div div .text-image-index p.phrase {
+    display: none;
+  }
+  section div div .text-image-index .text-item {
+    display: none;
+  }
 }
 
 .bg-sobre-mi .card {
